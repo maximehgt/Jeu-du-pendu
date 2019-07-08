@@ -1,0 +1,15 @@
+
+.game_drawing {
+    background-color: #e4e4e4;
+    border-radius: 20px;
+}
+.game_drawing > * {
+    stroke-width: 4px;
+    stroke-linejoin: round;
+}
+.game_drawing > *.hide {
+    display: none;
+}
+.game_drawing > line {
+    stroke: black;
+}

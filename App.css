@@ -1,0 +1,134 @@
+body { 
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 16px; 
+  background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+ul { 
+  margin: 0; 
+  padding: 0; 
+}
+li { 
+  list-style: none; 
+}
+
+.game {
+  width: 600px;
+  margin: auto;
+}
+.game > h1 {
+  text-align: center;
+  color: grey;
+}
+.game button {
+  margin: 0;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+.game button:hover {
+  opacity: 0.7;
+}
+
+.game_body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.game_body > *:first-child {
+  flex: 1 300px;
+  min-width: 300px;
+}
+.game_body > *:last-child {
+  width: 220px;
+}
+
+.game_counter {
+  display: inline-block;
+  margin: 0;
+  padding: 10px;
+  border-radius: 0 20px 20px 0;
+  background-color: #2db389;
+  color: white;
+}
+.game_counter span {
+  font-size: 0.7em;
+  font-weight: normal;
+  font-style: italic;
+  vertical-align: middle;
+}
+
+.game_word {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 40px auto;
+  font-size: 24px;
+}
+.game_word_letter {
+  margin: 5px;
+  cursor: default;
+}
+
+.game_keyboard {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 460px;
+  margin: 40px auto;
+  padding-bottom: 30px;
+  font-size: 18px;
+}
+.game_keyboard_letter {
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  margin: 5px;
+
+  background-color: #f3f3f3;
+  color: grey;
+  font-weight: bold;
+
+  border: 1px solid grey;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+.game_keyboard_letter:hover, .game_keyboard_letter--used {
+  background-color: grey;
+  color: white;
+}
+.game_keyboard button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px 10px;
+  background-color: #dd7575;
+  font-size: 0.6em;
+}
+
+.game_reset {
+  margin: 60px auto;
+  text-align: center;
+}
+.game_reset button {
+  background-color: #2db389;
+}
+
+.game_rules summary {
+  background-color: grey;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+.game_rules article {
+  background-color: #f3f3f3;
+  padding: 20px;
+}
+.game_rules article p {
+  margin: 0 auto 5px;
+}
